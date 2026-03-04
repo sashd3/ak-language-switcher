@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace OCA\NcLanguageSwitcher\Service;
+namespace OCA\AkLanguageSwitcher\Service;
 
 use OCP\IConfig;
 use OCP\IUserSession;

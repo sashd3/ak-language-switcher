@@ -2,27 +2,31 @@
 
 declare(strict_types=1);
 
-namespace OCA\NcLanguageSwitcher\Controller;
+namespace OCA\AkLanguageSwitcher\Controller;
 
-use OCA\NcLanguageSwitcher\AppInfo\Application;
-use OCA\NcLanguageSwitcher\Service\LanguageService;
+use OCA\AkLanguageSwitcher\AppInfo\Application;
+use OCA\AkLanguageSwitcher\Service\LanguageService;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Http\Attribute\NoAdminRequired;
 use OCP\AppFramework\Http\Attribute\NoCSRFRequired;
 use OCP\AppFramework\Http\Attribute\PublicPage;
 use OCP\AppFramework\Http\JSONResponse;
+use OCP\IConfig;
 use OCP\IRequest;
 
 class LanguageController extends Controller {
 	private LanguageService $languageService;
+	private IConfig $config;
 
 	public function __construct(
 		IRequest $request,
-		LanguageService $languageService
+		LanguageService $languageService,
+		IConfig $config
 	) {
 		parent::__construct(Application::APP_ID, $request);
 		$this->languageService = $languageService;
+		$this->config = $config;
 	}
 
 	/**
@@ -39,11 +43,31 @@ class LanguageController extends Controller {
 	 */
 	#[NoAdminRequired]
 	public function setLanguage(string $lang): JSONResponse {
+		// Check if switcher is enabled
+		if ($this->config->getAppValue(Application::APP_ID, 'enabled', 'yes') !== 'yes') {
+			return new JSONResponse(
+				['error' => 'Language switcher is disabled'],
+				Http::STATUS_FORBIDDEN
+			);
+		}
+
 		if (!$this->languageService->isValidLanguage($lang)) {
 			return new JSONResponse(
 				['error' => 'Invalid language code'],
 				Http::STATUS_BAD_REQUEST
 			);
+		}
+
+		// Check against admin-restricted language list
+		$allowedStr = $this->config->getAppValue(Application::APP_ID, 'allowed_languages', '');
+		if ($allowedStr !== '') {
+			$allowedCodes = explode(',', $allowedStr);
+			if (!in_array($lang, $allowedCodes, true)) {
+				return new JSONResponse(
+					['error' => 'Language not allowed'],
+					Http::STATUS_FORBIDDEN
+				);
+			}
 		}
 
 		$this->languageService->setUserLanguage($lang);

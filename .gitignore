@@ -1,4 +1,7 @@
 node_modules/
 vendor/
-js/
 .npm
+js/*.map
+deploy.sh
+__pycache__/
+build/

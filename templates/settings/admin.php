@@ -1,4 +1,4 @@
 <?php
 /** @var array $_ */
 ?>
-<div id="nc-language-switcher-admin"></div>
+<div id="ak-language-switcher-admin"></div>

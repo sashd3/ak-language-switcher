@@ -1,24 +1,37 @@
 <template>
-	<NcHeaderMenu id="nc-language-switcher-menu"
-		class="nc-language-switcher"
-		:aria-label="t('nc_language_switcher', 'Language')"
+	<NcHeaderMenu id="ak-language-switcher-menu"
+		class="ak-language-switcher"
+		:aria-label="t('ak_language_switcher', 'Language')"
 		:title="currentName">
 		<template #trigger>
-			<span class="nc-language-switcher__trigger">{{ currentFlag }}</span>
+			<component :is="iconComponent"
+				:size="iconSize"
+				:stroke-width="iconStrokeWidth"
+				:style="iconStyle" />
 		</template>
-		<div class="nc-language-switcher__list">
+		<div class="ak-language-switcher__container">
 			<input v-model="search"
-				class="nc-language-switcher__search"
+				class="ak-language-switcher__search"
 				type="text"
-				:placeholder="t('nc_language_switcher', 'Search languages…')">
-			<ul>
-				<li v-for="lang in filteredLanguages"
+				:aria-label="t('ak_language_switcher', 'Search languages')"
+				:placeholder="t('ak_language_switcher', 'Search languages…')"
+				@keydown.down.prevent="focusNext"
+				@keydown.up.prevent="focusPrev">
+			<ul class="ak-language-switcher__list"
+				role="listbox"
+				:aria-label="t('ak_language_switcher', 'Available languages')">
+				<li v-for="(lang, index) in filteredLanguages"
 					:key="lang.code"
-					class="nc-language-switcher__item"
-					:class="{ 'nc-language-switcher__item--active': lang.code === currentLanguage }"
-					@click="switchLanguage(lang.code)">
-					<span class="nc-language-switcher__name">{{ lang.name }}</span>
-					<span class="nc-language-switcher__code">{{ lang.code }}</span>
+					class="ak-language-switcher__item"
+					:class="{ 'ak-language-switcher__item--active': lang.code === currentLanguage }"
+					role="option"
+					tabindex="0"
+					:aria-selected="lang.code === currentLanguage"
+					@click="switchLanguage(lang.code)"
+					@keydown.enter.prevent="switchLanguage(lang.code)"
+					@keydown.down.prevent="focusNext"
+					@keydown.up.prevent="focusPrev">
+					<span class="ak-language-switcher__name">{{ lang.name }}</span>
 				</li>
 			</ul>
 		</div>
@@ -31,6 +44,7 @@ import { generateUrl } from '@nextcloud/router'
 import axios from '@nextcloud/axios'
 import NcHeaderMenu from '@nextcloud/vue/dist/Components/NcHeaderMenu.js'
 import { translate as t } from '@nextcloud/l10n'
+import { ICON_MAP, Globe } from './icons.js'
 
 export default {
 	name: 'LanguageSwitcher',
@@ -49,9 +63,12 @@ export default {
 
 	data() {
 		return {
-			languages: loadState('nc_language_switcher', 'languages', []),
-			currentLanguage: loadState('nc_language_switcher', 'currentLanguage', 'en'),
-			isLoggedIn: loadState('nc_language_switcher', 'isLoggedIn', false),
+			languages: loadState('ak_language_switcher', 'languages', []),
+			currentLanguage: loadState('ak_language_switcher', 'currentLanguage', 'en'),
+			iconName: loadState('ak_language_switcher', 'icon', 'Globe'),
+			iconSize: loadState('ak_language_switcher', 'iconSize', 20),
+			iconColor: loadState('ak_language_switcher', 'iconColor', ''),
+			iconStrokeWidth: loadState('ak_language_switcher', 'iconStrokeWidth', 2),
 			search: '',
 		}
 	},
@@ -66,97 +83,122 @@ export default {
 				(l) => l.name.toLowerCase().includes(q) || l.code.toLowerCase().includes(q),
 			)
 		},
-
 		currentName() {
 			const lang = this.languages.find((l) => l.code === this.currentLanguage)
 			return lang ? lang.name : this.currentLanguage
 		},
-
-		currentFlag() {
-			// Show a globe icon as trigger
-			return '🌐'
+		iconComponent() {
+			return ICON_MAP[this.iconName] || Globe
+		},
+		iconStyle() {
+			return this.iconColor ? { color: this.iconColor } : {}
 		},
 	},
 
 	methods: {
 		t,
 
+		focusNext(e) {
+			const items = this.$el.querySelectorAll('.ak-language-switcher__item')
+			const current = document.activeElement
+			const index = Array.from(items).indexOf(current)
+			if (index < items.length - 1) {
+				items[index + 1].focus()
+			} else if (current.classList.contains('ak-language-switcher__search')) {
+				items[0]?.focus()
+			}
+		},
+
+		focusPrev(e) {
+			const items = this.$el.querySelectorAll('.ak-language-switcher__item')
+			const current = document.activeElement
+			const index = Array.from(items).indexOf(current)
+			if (index > 0) {
+				items[index - 1].focus()
+			} else if (index === 0) {
+				this.$el.querySelector('.ak-language-switcher__search')?.focus()
+			}
+		},
+
 		async switchLanguage(lang) {
 			if (lang === this.currentLanguage) {
 				return
 			}
-
-			if (this.isLoggedIn) {
+			if (this.mode === 'authenticated') {
 				try {
-					await axios.post(generateUrl('/apps/nc_language_switcher/language'), { lang })
+					await axios.post(generateUrl('/apps/ak_language_switcher/language'), { lang })
 				} catch (e) {
 					console.error('Failed to set language', e)
 					return
 				}
 			} else {
-				// Public/anonymous: set cookie for Accept-Language override
-				document.cookie = `nc_language=${lang}; path=/; SameSite=Lax; max-age=31536000`
+				const secure = window.location.protocol === 'https:' ? '; Secure' : ''
+				document.cookie = `nc_language=${encodeURIComponent(lang)}; path=/; SameSite=Lax; max-age=86400${secure}`
 			}
-
 			window.location.reload()
 		},
 	},
 }
 </script>
 
-<style scoped>
-.nc-language-switcher__trigger {
-	font-size: 20px;
-	line-height: 1;
-}
-
-.nc-language-switcher__list {
+<style>
+.ak-language-switcher__container {
 	padding: 8px;
 	min-width: 200px;
+	display: flex;
+	flex-direction: column;
 	max-height: 400px;
-	overflow-y: auto;
 }
 
-.nc-language-switcher__search {
+.ak-language-switcher__search {
 	width: 100%;
 	padding: 8px;
 	margin-bottom: 4px;
 	border: 1px solid var(--color-border);
 	border-radius: var(--border-radius);
 	box-sizing: border-box;
+	flex-shrink: 0;
 }
 
-.nc-language-switcher__list ul {
+.ak-language-switcher__list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	overflow-y: auto;
+	flex: 1;
 }
 
-.nc-language-switcher__item {
+#ak-language-switcher-menu .ak-language-switcher__item {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	padding: 8px 12px;
 	cursor: pointer;
 	border-radius: var(--border-radius);
+	transition: background-color 0.15s ease;
+	width: 100%;
+	box-sizing: border-box;
+	min-height: 40px;
 }
 
-.nc-language-switcher__item:hover {
+#ak-language-switcher-menu .ak-language-switcher__item:hover {
 	background-color: var(--color-background-hover);
 }
 
-.nc-language-switcher__item--active {
+#ak-language-switcher-menu .ak-language-switcher__item--active {
 	background-color: var(--color-primary-element-light);
 	font-weight: bold;
 }
 
-.nc-language-switcher__name {
+#ak-language-switcher-menu .ak-language-switcher__item--active:hover {
+	background-color: var(--color-primary-element-light);
+}
+
+.ak-language-switcher__name {
 	flex: 1;
 }
 
-.nc-language-switcher__code {
-	color: var(--color-text-maxcontrast);
-	font-size: 0.85em;
-	margin-left: 8px;
+/* Public pages only: position before avatar menu */
+#body-public #ak-language-switcher-menu {
+	order: -1;
 }
 </style>
