@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>nc_language_switcher</id>
+    <name>Language Switcher</name>
+    <summary>Adds a language switcher to the Nextcloud header for both authenticated and public pages</summary>
+    <description><![CDATA[
+This app provides a language switcher dropdown in the Nextcloud top navigation bar.
+
+- For authenticated users: changes the user's language preference
+- For public/anonymous users (e.g. shared links): sets a cookie that overrides the browser's Accept-Language header
+
+Works with Nextcloud 27 and above.
+    ]]></description>
+    <version>0.0.1-alpha</version>
+    <licence>agpl</licence>
+    <author>aarekraft.dev</author>
+    <namespace>NcLanguageSwitcher</namespace>
+    <category>customization</category>
+    <bugs>https://github.com/sash/nc-language-switcher/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="27" max-version="33"/>
+    </dependencies>
+    <settings>
+        <admin>OCA\NcLanguageSwitcher\Settings\AdminSettings</admin>
+    </settings>
+</info>
