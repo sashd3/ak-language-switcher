@@ -8,3 +8,4 @@ build/
 .playwright-mcp/
 docs/RELEASE_WORKFLOW.md
 docs/STORE_PUBLISHING.md
+*.code-workspace
