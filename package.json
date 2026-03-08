@@ -1,6 +1,13 @@
 {
-  "name": "nc-language-switcher",
+  "name": "ak-language-switcher",
   "version": "1.0.0",
+  "description": "Nextcloud app that adds a language switcher to the header bar for authenticated and public pages",
+  "license": "AGPL-3.0-or-later",
+  "author": "aarekraft.dev - Sash Wegmüller",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sashd3/ak-language-switcher.git"
+  },
   "private": true,
   "scripts": {
     "build": "webpack --node-env production --progress",

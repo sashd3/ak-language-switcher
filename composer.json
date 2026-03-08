@@ -1,11 +1,11 @@
 {
-    "name": "sash/nc-language-switcher",
+    "name": "aarekraft/ak-language-switcher",
     "description": "Nextcloud Language Switcher App",
     "type": "project",
     "license": "AGPL-3.0-or-later",
     "autoload": {
         "psr-4": {
-            "OCA\\NcLanguageSwitcher\\": "lib/"
+            "OCA\\AkLanguageSwitcher\\": "lib/"
         }
     }
 }

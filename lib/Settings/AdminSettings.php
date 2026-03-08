@@ -1,11 +1,15 @@
 <?php
+/**
+ * SPDX-FileCopyrightText: 2026 aarekraft.dev - Sash Wegmüller
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 
 declare(strict_types=1);
 
-namespace OCA\NcLanguageSwitcher\Settings;
+namespace OCA\AkLanguageSwitcher\Settings;
 
-use OCA\NcLanguageSwitcher\AppInfo\Application;
-use OCA\NcLanguageSwitcher\Service\LanguageService;
+use OCA\AkLanguageSwitcher\AppInfo\Application;
+use OCA\AkLanguageSwitcher\Service\LanguageService;
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IConfig;
 use OCP\IInitialStateService;
@@ -32,17 +36,26 @@ class AdminSettings implements ISettings {
 		$allowedLanguages = $this->config->getAppValue(Application::APP_ID, 'allowed_languages', '');
 		$allowedList = $allowedLanguages !== '' ? explode(',', $allowedLanguages) : [];
 
+		$icon = $this->config->getAppValue(Application::APP_ID, 'icon', 'Globe');
+		$iconSize = (int) $this->config->getAppValue(Application::APP_ID, 'icon_size', '20');
+		$iconColor = $this->config->getAppValue(Application::APP_ID, 'icon_color', '');
+		$iconStrokeWidth = $this->config->getAppValue(Application::APP_ID, 'icon_stroke_width', '2');
+
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminEnabled', $enabled);
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminAllowedLanguages', $allowedList);
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminAllLanguages', $this->languageService->getAvailableLanguages());
+		$this->initialState->provideInitialState(Application::APP_ID, 'adminIcon', $icon);
+		$this->initialState->provideInitialState(Application::APP_ID, 'adminIconSize', $iconSize);
+		$this->initialState->provideInitialState(Application::APP_ID, 'adminIconColor', $iconColor);
+		$this->initialState->provideInitialState(Application::APP_ID, 'adminIconStrokeWidth', (float) $iconStrokeWidth);
 
-		Util::addScript(Application::APP_ID, 'nc-language-switcher-admin');
+		Util::addScript(Application::APP_ID, 'ak-language-switcher-admin');
 
 		return new TemplateResponse(Application::APP_ID, 'settings/admin');
 	}
 
 	public function getSection(): string {
-		return 'additional';
+		return 'ak_language_switcher';
 	}
 
 	public function getPriority(): int {
