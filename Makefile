@@ -33,8 +33,10 @@ appstore: clean
 	# Composer autoload
 	cp composer.json $(sign_dir)/$(app_name)/
 	cp composer.lock $(sign_dir)/$(app_name)/
-	# Create tarball
-	tar czf $(tarball) -C $(sign_dir) $(app_name)
+	# Remove macOS resource fork files that cause ReflectionException on Linux servers
+	find $(sign_dir) -name '._*' -delete
+	# Create tarball (COPYFILE_DISABLE prevents macOS from adding ._* files)
+	COPYFILE_DISABLE=1 tar czf $(tarball) -C $(sign_dir) $(app_name)
 	# Cleanup staging
 	rm -rf $(sign_dir)
 	@echo ""

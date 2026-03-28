@@ -32,7 +32,7 @@ Adds a language switcher dropdown to the header bar, allowing users to change th
 
 [Support on Liberapay](https://liberapay.com/aarekraft.dev)
     ]]></description>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <licence>AGPL-3.0-or-later</licence>
     <author>aarekraft.dev - Sash Wegmüller</author>
     <namespace>AkLanguageSwitcher</namespace>
