@@ -213,6 +213,7 @@ export default {
 	display: block;
 	padding: 0 12px;
 	cursor: pointer;
+	text-transform: capitalize;
 }
 
 /* Public pages only: position before avatar menu */
