@@ -26,7 +26,7 @@ class AdminSection implements IIconSection {
 	}
 
 	public function getName(): string {
-		return $this->l->t('Language Switcher');
+		return $this->l->t('ak_language_switcher', 'Language switcher');
 	}
 
 	public function getPriority(): int {
