@@ -433,6 +433,10 @@ export default {
 	overflow-y: auto;
 }
 
+.ak-language-switcher-admin__list .checkbox-content__text.checkbox-radio-switch__text {
+	text-transform: capitalize;
+}
+
 /* Save bar */
 .ak-language-switcher-admin__save-bar {
 	display: flex;
