@@ -1,6 +1,6 @@
 {
   "name": "ak-language-switcher",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Nextcloud app that adds a language switcher to the header bar for authenticated and public pages",
   "license": "AGPL-3.0-or-later",
   "author": "aarekraft.dev - Sash Wegmüller",
