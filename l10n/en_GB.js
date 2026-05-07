@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Saving…',
 		'Saved': 'Saved',
 		'Help': 'Help',
-		'Language Switcher Help': 'Language Switcher Help',
 		'Overview': 'Overview',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.',
 		'How it works': 'How it works',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.',
 		'Requirements': 'Requirements',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.',
+		'Language switcher help': 'Language Switcher Help',
+		'Language switcher': 'Language switcher',
+		'Display': 'Display',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Capitalise language names (e.g. "Français" instead of "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

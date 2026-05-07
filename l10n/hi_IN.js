@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'सहेजा जा रहा है…',
 		'Saved': 'सहेजा गया',
 		'Help': 'सहायता',
-		'Language Switcher Help': 'भाषा स्विचर सहायता',
 		'Overview': 'अवलोकन',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'यह ऐप Nextcloud हेडर बार में एक भाषा स्विचर जोड़ता है। यह लॉग इन उपयोगकर्ताओं और सार्वजनिक शेयर पेजों पर गुमनाम आगंतुकों दोनों के लिए काम करता है।',
 		'How it works': 'यह कैसे काम करता है',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'अनुमत भाषाएँ: स्विचर में दिखाई देने वाली भाषाओं को प्रतिबंधित करें। सभी स्थापित भाषाएँ दिखाने के लिए खाली छोड़ें।',
 		'Requirements': 'आवश्यकताएँ',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 या नया। मूल भाषा नामों के लिए PHP intl एक्सटेंशन अनुशंसित है।',
+		'Language switcher help': 'भाषा स्विचर सहायता',
+		'Language switcher': 'भाषा स्विचर',
+		'Display': 'प्रदर्शन',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'भाषा के नाम बड़े अक्षर से शुरू करें (जैसे "français" के बजाय "Français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'बंद होने पर, भाषाओं के नाम उनके मूल वर्तनी में दिखाए जाते हैं (भाषा-वैज्ञानिक रूप से सही)। चालू होने पर, दृश्य एकरूपता के लिए प्रत्येक भाषा का नाम बड़े अक्षर से शुरू होता है।',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

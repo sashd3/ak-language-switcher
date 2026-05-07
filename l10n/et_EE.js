@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Salvestamine…',
 		'Saved': 'Salvestatud',
 		'Help': 'Abi',
-		'Language Switcher Help': 'Abi – Keelevahetaja',
 		'Overview': 'Ülevaade',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'See rakendus lisab Nextcloudi päiseribalale keelevahetaja. See töötab nii sisselogitud kasutajate kui ka anonüümsete külastajate jaoks avalikel jagamislehekülgedel.',
 		'How it works': 'Kuidas see töötab',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Lubatud keeled: Piirake, millised keeled vahetajas kuvatakse. Jätke tühjaks kõigi installitud keelte kuvamiseks.',
 		'Requirements': 'Nõuded',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 või uuem. PHP intl laiendus on soovitatav natiivsete keeltenimede jaoks.',
+		'Language switcher help': 'Abi – Keelevahetaja',
+		'Language switcher': 'Keele vahetaja',
+		'Display': 'Kuva',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Alusta keelenimesid suure tähega (nt "Français", mitte "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Kui keelatud, kuvatakse keelte nimed nende algses kirjapildis (keeleliselt korrektsed). Kui lubatud, algab iga keele nimi suurtähega ühtlase visuaalse ilme nimel.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

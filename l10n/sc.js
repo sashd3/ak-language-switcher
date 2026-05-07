@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Salvende…',
 		'Saved': 'Salvadu',
 		'Help': 'Adjudu',
-		'Language Switcher Help': 'Adjudu de su cambiador de limba',
 		'Overview': 'Bista generale',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Custa aplicatzione agiunghit unu cambiador de limba a sa barra de intesstadura de Nextcloud. Funtzionat pro s\'utentes autenticados e pro sos bisitadores anònimos in sas pàginas de cuntione pública.',
 		'How it works': 'Comente funtzionat',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Limbas permittidas: restringe cales limbas aparint in su cambiador. Lassa boidia pro mustrare totas sas limbas installadas.',
 		'Requirements': 'Requisitos',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 o prus nou. S\'estensione PHP intl est arrecomandata pro sos nùmenes nativos de sas limbas.',
+		'Language switcher help': 'Adjudu de su cambiador de limba',
+		'Language switcher': 'Càmbiu de limba',
+		'Display': 'Bisualizatzione',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Cumintzare sos nùmenes de limbas cun letra manna (es. «Français» imbetzes de «français»)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Cando est disativadu, sos nùmenes de limbas sunt mustrados in s\'ortografia issoro nativa (linguisticamente curreta). Cando est ativadu, cada nùmene de limba cumintzat cun una majuscula pro un\'apparèntzia visuale uniforme.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

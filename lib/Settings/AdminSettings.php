@@ -40,6 +40,7 @@ class AdminSettings implements ISettings {
 		$iconSize = (int) $this->config->getAppValue(Application::APP_ID, 'icon_size', '20');
 		$iconColor = $this->config->getAppValue(Application::APP_ID, 'icon_color', '');
 		$iconStrokeWidth = $this->config->getAppValue(Application::APP_ID, 'icon_stroke_width', '2');
+		$capitalizeNames = $this->config->getAppValue(Application::APP_ID, 'capitalize_names', 'yes') === 'yes';
 
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminEnabled', $enabled);
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminAllowedLanguages', $allowedList);
@@ -48,6 +49,7 @@ class AdminSettings implements ISettings {
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminIconSize', $iconSize);
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminIconColor', $iconColor);
 		$this->initialState->provideInitialState(Application::APP_ID, 'adminIconStrokeWidth', (float) $iconStrokeWidth);
+		$this->initialState->provideInitialState(Application::APP_ID, 'adminCapitalizeNames', $capitalizeNames);
 
 		Util::addScript(Application::APP_ID, 'ak-language-switcher-admin');
 

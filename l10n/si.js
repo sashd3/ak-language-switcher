@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'සුරකිමින්…',
 		'Saved': 'සුරකිනා ලදී',
 		'Help': 'උදව්',
-		'Language Switcher Help': 'භාෂා මාරුකාරක උදව්',
 		'Overview': 'දළ විශ්ලේෂණය',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'මෙම යෙදුම Nextcloud ශීර්ෂ තීරයට භාෂා මාරුකාරකයක් එක් කරයි. එය පිවිසුම් ලබාගත් පරිශීලකයින් සහ පොදු බෙදාගැනීමේ පිටු වල නිර්නාමික අමුත්තන් සඳහා ක්‍රියා කරයි.',
 		'How it works': 'එය ක්‍රියා කරන ආකාරය',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'අවසර දී ඇති භාෂා: මාරුකාරකයේ කුමන භාෂා දිස් වේද යන්න සීමා කරන්න. ස්ථාපිත සියලු භාෂා පෙන්වීමට හිස් ලෙස ඉතිරි කරන්න.',
 		'Requirements': 'අවශ්‍යතා',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 හෝ නව. දේශීය භාෂා නාම සඳහා PHP intl දිගුව නිර්දේශ කෙරේ.',
+		'Language switcher help': 'භාෂා මාරුකාරක උදව්',
+		'Language switcher': 'භාෂා මාරුකරුවා',
+		'Display': 'පෙන්වීම',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'භාෂා නම් කැපිටල් අකුරෙන් ආරම්භ කරන්න (උදා. "français" වෙනුවට "Français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'අක්‍රිය කළ විට, භාෂා නාම ඒවායේ ස්වදේශික අක්ෂර වින්‍යාසයෙන් (භාෂාවිද්‍යාත්මකව නිවැරදි) පෙන්වයි. සක්‍රිය කළ විට, දෘශ්‍ය ස්ථාවරත්වය සඳහා සෑම භාෂා නාමයක්ම කැපිටල් අකුරකින් ආරම්භ වේ.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

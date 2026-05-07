@@ -6,7 +6,7 @@
 <template>
 	<div class="ak-language-switcher-admin">
 		<div class="ak-language-switcher-admin__header">
-			<h2>Language Switcher</h2>
+			<h2>{{ t('ak_language_switcher', 'Language switcher') }}</h2>
 			<NcButton type="tertiary"
 				:aria-label="t('ak_language_switcher', 'Help')"
 				@click="showHelp = true">
@@ -17,7 +17,7 @@
 		</div>
 
 		<NcDialog v-if="showHelp"
-			:name="t('ak_language_switcher', 'Language Switcher Help')"
+			:name="t('ak_language_switcher', 'Language switcher help')"
 			@closing="showHelp = false">
 			<div class="ak-language-switcher-admin__help-content">
 				<h3>{{ t('ak_language_switcher', 'Overview') }}</h3>
@@ -104,6 +104,18 @@
 					:style="iconColor ? { color: iconColor } : {}" />
 			</div>
 
+			<h3>{{ t('ak_language_switcher', 'Display') }}</h3>
+			<div class="ak-language-switcher-admin__capitalize-toggle">
+				<NcCheckboxRadioSwitch :checked.sync="capitalizeNames"
+					type="switch"
+					@update:checked="dirty = true">
+					{{ t('ak_language_switcher', 'Capitalize language names (e.g. "Français" instead of "français")') }}
+				</NcCheckboxRadioSwitch>
+			</div>
+			<p class="ak-language-switcher-admin__hint">
+				{{ t('ak_language_switcher', 'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.') }}
+			</p>
+
 			<h3>{{ t('ak_language_switcher', 'Allowed languages') }}</h3>
 			<p class="ak-language-switcher-admin__hint">
 				{{ t('ak_language_switcher', 'Select which languages are available in the switcher. If none are selected, all languages will be shown.') }}
@@ -115,7 +127,8 @@
 					:placeholder="t('ak_language_switcher', 'Search languages…')">
 			</div>
 
-			<div class="ak-language-switcher-admin__list">
+			<div class="ak-language-switcher-admin__list"
+				:class="{ 'ak-language-switcher-admin__list--capitalize': capitalizeNames }">
 				<NcCheckboxRadioSwitch v-for="lang in filteredLanguages"
 					:key="lang.code"
 					:checked="isAllowed(lang.code)"
@@ -168,6 +181,7 @@ export default {
 			iconSize: loadState('ak_language_switcher', 'adminIconSize', 20),
 			iconColor: loadState('ak_language_switcher', 'adminIconColor', ''),
 			iconStrokeWidth: loadState('ak_language_switcher', 'adminIconStrokeWidth', 2),
+			capitalizeNames: loadState('ak_language_switcher', 'adminCapitalizeNames', true),
 			iconOptionNames: ICON_OPTIONS,
 			allIcons: ICON_MAP,
 			search: '',
@@ -217,6 +231,7 @@ export default {
 					iconSize: this.iconSize,
 					iconColor: this.iconColor,
 					iconStrokeWidth: this.iconStrokeWidth,
+					capitalizeNames: this.capitalizeNames,
 				})
 				this.dirty = false
 				this.saved = true
@@ -433,6 +448,7 @@ export default {
 	overflow-y: auto;
 }
 
+
 /* Save bar */
 .ak-language-switcher-admin__save-bar {
 	display: flex;
@@ -443,8 +459,9 @@ export default {
 }
 
 .ak-language-switcher-admin__saved {
-	color: var(--color-success);
+	color: #46ba61;
 	font-size: 14px;
+	font-weight: 500;
 }
 
 .fade-enter-active,
@@ -455,5 +472,31 @@ export default {
 .fade-enter,
 .fade-leave-to {
 	opacity: 0;
+}
+</style>
+
+<style>
+/* Non-scoped: pierce into NcCheckboxRadioSwitch internals to capitalize labels */
+.ak-language-switcher-admin__list--capitalize label,
+.ak-language-switcher-admin__list--capitalize .checkbox-radio-switch__text,
+.ak-language-switcher-admin__list--capitalize .checkbox-content__text__main {
+	text-transform: capitalize;
+}
+
+/* Capitalize-toggle: strip the default NcCheckboxRadioSwitch button-like background/padding */
+.ak-language-switcher-admin__capitalize-toggle {
+	margin-bottom: 3px;
+}
+.ak-language-switcher-admin__capitalize-toggle .checkbox-content,
+.ak-language-switcher-admin__capitalize-toggle .checkbox-radio-switch__content {
+	padding: 0 !important;
+	min-height: auto !important;
+	background: transparent !important;
+	border-radius: 0 !important;
+}
+.ak-language-switcher-admin__capitalize-toggle .checkbox-radio-switch__content:hover,
+.ak-language-switcher-admin__capitalize-toggle .checkbox-radio-switch:hover .checkbox-radio-switch__content,
+.ak-language-switcher-admin__capitalize-toggle .checkbox-radio-switch:focus-within .checkbox-radio-switch__content {
+	background: transparent !important;
 }
 </style>

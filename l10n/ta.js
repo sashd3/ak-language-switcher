@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'சேமிக்கிறது…',
 		'Saved': 'சேமிக்கப்பட்டது',
 		'Help': 'உதவி',
-		'Language Switcher Help': 'மொழி மாற்றி உதவி',
 		'Overview': 'கண்ணோட்டம்',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'இந்த செயலி Nextcloud தலைப்புப் பட்டியில் மொழி மாற்றியைச் சேர்க்கிறது. உள்நுழைந்த பயனர்கள் மற்றும் பொது பகிர்வு பக்கங்களில் அநாமதேய பார்வையாளர்கள் இருவருக்கும் செயல்படுகிறது.',
 		'How it works': 'இது எப்படி செயல்படுகிறது',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'அனுமதிக்கப்பட்ட மொழிகள்: மாற்றியில் எந்த மொழிகள் தோன்றும் என்பதை கட்டுப்படுத்தவும். நிறுவப்பட்ட அனைத்து மொழிகளையும் காட்ட காலியாக விடவும்.',
 		'Requirements': 'தேவைகள்',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 அல்லது புதியது. பூர்வீக மொழி பெயர்களுக்கு PHP intl நீட்டிப்பு பரிந்துரைக்கப்படுகிறது.',
+		'Language switcher help': 'மொழி மாற்றி உதவி',
+		'Language switcher': 'மொழி மாற்றி',
+		'Display': 'காட்சி',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'மொழிகளின் பெயர்களை பெரிய எழுத்தில் தொடங்கு (எ.கா. "français" க்குப் பதிலாக "Français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'முடக்கப்பட்டிருக்கும்போது, மொழிகளின் பெயர்கள் அவற்றின் தாய்மொழி எழுத்துப்பிழையில் (மொழியியல் ரீதியாகச் சரியானது) காட்டப்படும். இயக்கப்பட்டிருக்கும்போது, காட்சி ஒத்திசைவுக்காக ஒவ்வொரு மொழியின் பெயரும் பெரிய எழுத்தில் தொடங்கும்.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

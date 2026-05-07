@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Saglabā…',
 		'Saved': 'Saglabāts',
 		'Help': 'Palīdzība',
-		'Language Switcher Help': 'Palīdzība – Valodas pārslēdzējs',
 		'Overview': 'Pārskats',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Šī lietotne pievieno valodas pārslēdzēju Nextcloud galvenes joslai. Tā darbojas gan pieraksttījušies lietotājiem, gan anonīmiem apmeklētājiem publiskās kopīgošanas lapās.',
 		'How it works': 'Kā tas darbojas',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Atļautās valodas: Ierobežojiet, kuras valodas tiek rādītas pārslēdzējā. Atstājiet tukšu, lai rādītu visas instalētās valodas.',
 		'Requirements': 'Prasības',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 vai jaunāks. PHP intl paplašinājums ir ieteicams vietējo valodu nosaukumiem.',
+		'Language switcher help': 'Palīdzība – Valodas pārslēdzējs',
+		'Language switcher': 'Valodu pārslēdzējs',
+		'Display': 'Attēlojums',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Valodu nosaukumi ar lielo sākumburtu (piem. „Français" nevis „français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Kad izslēgts, valodu nosaukumi tiek attēloti to dzimtajā pareizrakstībā (valodnieciski pareizi). Kad ieslēgts, katrs valodas nosaukums sākas ar lielo burtu vienotam vizuālam izskatam.',
 	},
 	'nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);'
 );

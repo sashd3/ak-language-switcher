@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Saxlanılır…',
 		'Saved': 'Saxlanıldı',
 		'Help': 'Kömək',
-		'Language Switcher Help': 'Kömək – Dil Dəyişdiricisi',
 		'Overview': 'İcmal',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Bu tətbiq Nextcloud başlıq çubuğuna dil dəyişdiricisi əlavə edir. Həm daxil olmuş istifadəçilər, həm də açıq paylaşım səhifələrindəki anonim ziyarətçilər üçün işləyir.',
 		'How it works': 'Necə işləyir',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'İcazə verilən dillər: Dəyişdiricide hansı dillərin görünəcəyini məhdudlaşdırın. Bütün quraşdırılmış dilləri göstərmək üçün boş buraxın.',
 		'Requirements': 'Tələblər',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 və ya daha yeni. PHP intl uzantısı dil adlarının yerli versiyaları üçün tövsiyə olunur.',
+		'Language switcher help': 'Kömək – Dil Dəyişdiricisi',
+		'Language switcher': 'Dil dəyişdiricisi',
+		'Display': 'Görünüş',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Dil adlarını böyük hərflə başlat (məs. "Français" əvəzinə "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Söndürüldüyündə dil adları öz təbii yazılışında göstərilir (dilçilik baxımından düzgün). Aktiv olduqda hər dil adı vizual ardıcıllıq üçün böyük hərflə başlayır.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Isekles…',
 		'Saved': 'Yettusekles',
 		'Help': 'Tallalt',
-		'Language Switcher Help': 'Tallalt n usnefli n tutlayt',
 		'Overview': 'Aglam',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Asnas-a yesɛa asnefli n tutlayt i teɣzi n Nextcloud. Yetteddu i yimeslayen yeknan akked inigaden d iferdisen deg isebtar n ufran aɣerfan.',
 		'How it works': 'Amek yetteddu',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Tutlayin yettusirgen: Senqed tutlayin i ttebbanen deg usnefli. Ḥeṭṭu ilem i uskan n tutlayin akk yettusebdayen.',
 		'Requirements': 'Imaswaḍen',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 neɣ ameqran. PHP intl extension yettumagren i ismawen n tutlayin tizwurin.',
+		'Language switcher help': 'Tallalt n usnefli n tutlayt',
+		'Language switcher': 'Awennez n tutlayt',
+		'Display': 'Askan',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Bdu ismawen n tutlayin s usekkil ameqqran (am. "Français" deg umḍiq n "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Mara yensa, ismawen n tutlayin ttwasknen s tira-nsen tigejdanin (tisawalin s ṣṣeḥ). Mara yermed, yal isem n tutlayt ad yebdu s usekkil ameqqran ɣef temɛiwna n uskan.',
 	},
 	'nplurals=2; plural=(n > 1);'
 );

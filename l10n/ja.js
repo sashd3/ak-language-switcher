@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': '保存中…',
 		'Saved': '保存済み',
 		'Help': 'ヘルプ',
-		'Language Switcher Help': '言語切り替えのヘルプ',
 		'Overview': '概要',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'このアプリはNextcloudのヘッダーバーに言語切り替えを追加します。ログインユーザーと公開共有ページの匿名訪問者の両方に対応しています。',
 		'How it works': '使い方',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': '許可する言語：切り替えに表示する言語を制限します。空のままにするとインストールされているすべての言語が表示されます。',
 		'Requirements': '要件',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27以降。ネイティブ言語名にはPHP intl拡張が推奨されます。',
+		'Language switcher help': '言語切り替えのヘルプ',
+		'Language switcher': '言語スイッチャー',
+		'Display': '表示',
+		'Capitalize language names (e.g. "Français" instead of "français")': '言語名を大文字で始める(例:「français」ではなく「Français」)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': '無効にすると、言語名は本来の表記(言語的に正しい)で表示されます。有効にすると、視覚的な統一感のため各言語名が大文字で始まります。',
 	},
 	'nplurals=1; plural=0;'
 );

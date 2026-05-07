@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Gordetzen…',
 		'Saved': 'Gordeta',
 		'Help': 'Laguntza',
-		'Language Switcher Help': 'Laguntza – Hizkuntza-aldagailua',
 		'Overview': 'Ikuspegi orokorra',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Aplikazio honek hizkuntza-aldagailu bat gehitzen du Nextcloud-en goiburuko barrara. Saioa hasitako erabiltzaileentzat zein parteka-orri publikoetako bisitari anonimorentzat funtzionatzen du.',
 		'How it works': 'Nola funtzionatzen duen',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Onartutako hizkuntzak: Mugatu aldagailuan zein hizkuntza agertzen diren. Utzi hutsik instalatutako hizkuntza guztiak erakusteko.',
 		'Requirements': 'Eskakizunak',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 edo berriagoa. PHP intl hedapena gomendatzen da hizkuntzen izen natiboak izateko.',
+		'Language switcher help': 'Laguntza – Hizkuntza-aldagailua',
+		'Language switcher': 'Hizkuntza-aldatzailea',
+		'Display': 'Bistaratzea',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Hizkuntzen izenak letra larriz hasi (adib. "Français" "français" beharrean)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Desgaituta dagoenean, hizkuntzen izenak euren jatorrizko ortografian erakusten dira (linguistikoki zuzenak). Gaituta dagoenean, hizkuntza bakoitzaren izena letra larriz hasten da itxura bisual koherentea izan dezan.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

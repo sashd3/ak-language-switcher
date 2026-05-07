@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'ساقلاۋاتىدۇ…',
 		'Saved': 'ساقلاندى',
 		'Help': 'ياردەم',
-		'Language Switcher Help': 'تىل ئالماشتۇرغۇچ ياردىمى',
 		'Overview': 'ئومۇمىي كۆرۈنۈش',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'بۇ ئەپ Nextcloud ماۋزۇ ستونىغا تىل ئالماشتۇرغۇچ قوشىدۇ. ئۇ كىرگەن ئىشلەتكۈچىلەر ھەم ئاممىۋى ئورتاقلىشىش بەتلىرىدىكى ئىسىمسىز زىيارەتچىلەر ئۈچۈن ئىشلەيدۇ.',
 		'How it works': 'قانداق ئىشلەيدۇ',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'رۇخسەت قىلىنغان تىللار: ئالماشتۇرغۇچتا قايسى تىللارنىڭ كۆرۈنىدىغانلىقىنى چەكلەڭ. ئورنىتىلغان بارلىق تىللارنى كۆرسىتىش ئۈچۈن بوش قالدۇرۇڭ.',
 		'Requirements': 'تەلەپلەر',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 ياكى يېڭىراق. تۈپتىن تىل نامى ئۈچۈن PHP intl كېڭەيتىلمىسى تەۋسىيە قىلىنىدۇ.',
+		'Language switcher help': 'تىل ئالماشتۇرغۇچ ياردىمى',
+		'Language switcher': 'تىل ئالماشتۇرغۇچ',
+		'Display': 'كۆرسىتىش',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'تىل ناملىرىنى چوڭ ھەرپ بىلەن باشلاش (مەسىلەن "français" نىڭ ئورنىغا "Français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'چەكلەنگەن ۋاقتىدا، تىل ناملىرى ئۆزىنىڭ ئەسلى يېزىلىشى بويىچە كۆرسىتىلىدۇ (تىلشۇناسلىق جەھەتتىن توغرا). قوزغىتىلغان ۋاقتىدا، كۆرۈنۈشنىڭ بىردەكلىكى ئۈچۈن ھەر بىر تىل نامى چوڭ ھەرپ بىلەن باشلىنىدۇ.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

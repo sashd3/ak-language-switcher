@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Sine-save…',
 		'Saved': 'Na-save na',
 		'Help': 'Tulong',
-		'Language Switcher Help': 'Tulong sa Language Switcher',
 		'Overview': 'Pangkalahatang-ideya',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ang app na ito ay nagdaragdag ng language switcher sa header bar ng Nextcloud. Gumagana ito para sa parehong mga naka-log in na gumagamit at mga anonymous na bisita sa mga pampublikong share page.',
 		'How it works': 'Paano ito gumagana',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Mga pinahintulutang wika: Paghigpitan kung aling mga wika ang lilitaw sa switcher. Iwanang walang laman upang ipakita ang lahat ng mga naka-install na wika.',
 		'Requirements': 'Mga kinakailangan',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 o mas bago. Inirerekomenda ang PHP intl extension para sa mga katutubong pangalan ng wika.',
+		'Language switcher help': 'Tulong sa Language Switcher',
+		'Language switcher': 'Tagapagpalit ng wika',
+		'Display': 'Pagpapakita',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Malaking titik sa pangalan ng wika (hal. "Français" sa halip na "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Kapag hindi pinagana, ang mga pangalan ng wika ay ipinapakita sa kanilang likas na ispeling (wastong ayon sa wika). Kapag pinagana, ang bawat pangalan ng wika ay nagsisimula sa malaking titik para sa pare-parehong itsura.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

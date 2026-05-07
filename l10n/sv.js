@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Sparar…',
 		'Saved': 'Sparat',
 		'Help': 'Hjälp',
-		'Language Switcher Help': 'Hjälp för språkväxlare',
 		'Overview': 'Översikt',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Den här appen lägger till en språkväxlare i Nextclouds rubrikrad. Den fungerar både för inloggade användare och anonyma besökare på offentliga delsidor.',
 		'How it works': 'Så fungerar det',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Tillåtna språk: begränsa vilka språk som visas i växlaren. Lämna tomt för att visa alla installerade språk.',
 		'Requirements': 'Krav',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 eller senare. PHP intl-tillägget rekommenderas för språkens ursprungliga namn.',
+		'Language switcher help': 'Hjälp för språkväxlare',
+		'Language switcher': 'Språkväljare',
+		'Display': 'Visning',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Språknamn med stor bokstav (t.ex. "Français" istället för "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'När inaktiverat visas språknamn i sin ursprungliga stavning (språkligt korrekt). När aktiverat börjar varje språknamn med stor bokstav för enhetlig visuell utformning.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

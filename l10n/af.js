@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Stoor tans…',
 		'Saved': 'Gestoor',
 		'Help': 'Hulp',
-		'Language Switcher Help': 'Hulp vir taalwisselaar',
 		'Overview': 'Oorsig',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Hierdie program voeg ‘n taalwisselaar by die Nextcloud-kopbalkbalk. Dit werk vir beide aangemelde gebruikers en anonieme besoekers op openbare deelbladsye.',
 		'How it works': 'Hoe dit werk',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Toegelate tale: beperk watter tale in die wisselaar verskyn. Los leeg om alle geïnstalleerde tale te wys.',
 		'Requirements': 'Vereistes',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 of nuwer. Die PHP intl-uitbreiding word aanbeveel vir inheemse taalname.',
+		'Language switcher help': 'Hulp vir taalwisselaar',
+		'Language switcher': 'Taalwisselaar',
+		'Display': 'Vertoon',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Begin taalname met hoofletter (bv. "Français" in plaas van "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Wanneer afgeskakel, word taalname in hul oorspronklike spelling vertoon (taalkundig korrek). Wanneer geaktiveer, begin elke taalnaam met \'n hoofletter vir \'n eenvormige voorkoms.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

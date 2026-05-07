@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': '保存中…',
 		'Saved': '已保存',
 		'Help': '帮助',
-		'Language Switcher Help': '语言切换器帮助',
 		'Overview': '概览',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': '此应用在 Nextcloud 标题栏中添加语言切换器，适用于已登录用户和公共共享页面的匿名访客。',
 		'How it works': '工作原理',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': '允许的语言：限制切换器中显示的语言。留空则显示所有已安装的语言。',
 		'Requirements': '系统要求',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 或更高版本。建议安装 PHP intl 扩展以显示本地语言名称。',
+		'Language switcher help': '语言切换器帮助',
+		'Language switcher': '语言切换器',
+		'Display': '显示',
+		'Capitalize language names (e.g. "Français" instead of "français")': '语言名称首字母大写(例如使用「Français」而非「français」)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': '禁用时,语言名称按其原始拼写(语言学上正确)显示。启用时,每个语言名称首字母大写以保持视觉一致性。',
 	},
 	'nplurals=1; plural=0;'
 );

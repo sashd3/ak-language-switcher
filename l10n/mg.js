@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Tehirizina…',
 		'Saved': 'Efa tehirizina',
 		'Help': 'Fanampiana',
-		'Language Switcher Help': 'Fanampiana ny mpifidy fiteny',
 		'Overview': 'Fananganana',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ity app ity dia manampy mpifidy fiteny amin\'ny bara loha Nextcloud. Miasa ho an\'ny mpampiasa niditra sy ny mpitsidika tsy fantatra amin\'ny pejy fizarana ampahibemaso.',
 		'How it works': 'Ny fomba fiasany',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Fiteny azo ampiasaina: Fehezo ny fiteny miseho ao amin\'ny mpifidy. Avela ho foana mba haseho ny fiteny rehetra napetraka.',
 		'Requirements': 'Fepetra takiana',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 na vaovao kokoa. Tolo-kevitra ny PHP intl extension ho an\'ny anaran\'ny fiteny teratany.',
+		'Language switcher help': 'Fanampiana ny mpifidy fiteny',
+		'Language switcher': 'Mpamadika fiteny',
+		'Display': 'Fanehoana',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Manomboka ny anaran-tenim-pirenena amin\'ny tarehin-tsoratra lehibe (oh. "Français" fa tsy "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Rehefa atsahatra, ny anaran-tenim-pirenena dia aseho amin\'ny soratra fiavian\'izy ireo (marina ara-piteny). Rehefa atomboka, ny anaran-tenim-pirenena tsirairay dia manomboka amin\'ny tarehin-tsoratra lehibe ho an\'ny fitoviana ara-paneva.',
 	},
 	'nplurals=2; plural=(n > 1);'
 );

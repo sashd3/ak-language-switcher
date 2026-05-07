@@ -36,7 +36,8 @@
 					@keydown.enter.prevent="switchLanguage(lang.code)"
 					@keydown.down.prevent="focusNext"
 					@keydown.up.prevent="focusPrev">
-					<span class="ak-language-switcher__name">{{ lang.name }}</span>
+					<span class="ak-language-switcher__name"
+						:class="{ 'ak-language-switcher__name--capitalize': capitalizeNames }">{{ lang.name }}</span>
 				</li>
 			</ul>
 		</div>
@@ -74,6 +75,7 @@ export default {
 			iconSize: loadState('ak_language_switcher', 'iconSize', 20),
 			iconColor: loadState('ak_language_switcher', 'iconColor', ''),
 			iconStrokeWidth: loadState('ak_language_switcher', 'iconStrokeWidth', 2),
+			capitalizeNames: loadState('ak_language_switcher', 'capitalizeNames', true),
 			search: '',
 		}
 	},
@@ -213,6 +215,10 @@ export default {
 	display: block;
 	padding: 0 12px;
 	cursor: pointer;
+}
+
+.ak-language-switcher__name--capitalize {
+	text-transform: capitalize;
 }
 
 /* Public pages only: position before avatar menu */
