@@ -111,6 +111,7 @@ class Application extends App implements IBootstrap {
 			$iconSize = (int) $config->getAppValue(self::APP_ID, 'icon_size', '20');
 			$iconColor = $config->getAppValue(self::APP_ID, 'icon_color', '');
 			$iconStrokeWidth = $config->getAppValue(self::APP_ID, 'icon_stroke_width', '2');
+			$capitalizeNames = $config->getAppValue(self::APP_ID, 'capitalize_names', 'yes') === 'yes';
 
 			$initialState->provideInitialState(self::APP_ID, 'languages', $languages);
 			$initialState->provideInitialState(self::APP_ID, 'currentLanguage', $currentLanguage);
@@ -119,6 +120,7 @@ class Application extends App implements IBootstrap {
 			$initialState->provideInitialState(self::APP_ID, 'iconSize', $iconSize);
 			$initialState->provideInitialState(self::APP_ID, 'iconColor', $iconColor);
 			$initialState->provideInitialState(self::APP_ID, 'iconStrokeWidth', (float) $iconStrokeWidth);
+			$initialState->provideInitialState(self::APP_ID, 'capitalizeNames', $capitalizeNames);
 
 			Util::addScript(self::APP_ID, 'ak-language-switcher-main');
 		});

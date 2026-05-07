@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Αποθήκευση…',
 		'Saved': 'Αποθηκεύτηκε',
 		'Help': 'Βοήθεια',
-		'Language Switcher Help': 'Βοήθεια – Εναλλάκτης γλώσσας',
 		'Overview': 'Επισκόπηση',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Αυτή η εφαρμογή προσθέτει έναν εναλλάκτη γλώσσας στη γραμμή κεφαλίδας του Nextcloud. Λειτουργεί τόσο για συνδεδεμένους χρήστες όσο και για ανώνυμους επισκέπτες σε δημόσιες σελίδες κοινής χρήσης.',
 		'How it works': 'Πώς λειτουργεί',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Επιτρεπόμενες γλώσσες: Περιορίστε ποιες γλώσσες εμφανίζονται στον εναλλάκτη. Αφήστε κενό για εμφάνιση όλων των εγκατεστημένων γλωσσών.',
 		'Requirements': 'Απαιτήσεις',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 ή νεότερο. Η επέκταση PHP intl συνιστάται για εγγενή ονόματα γλωσσών.',
+		'Language switcher help': 'Βοήθεια – Εναλλάκτης γλώσσας',
+		'Language switcher': 'Εναλλαγή γλώσσας',
+		'Display': 'Εμφάνιση',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Κεφαλαία αρχικά γράμματα στα ονόματα γλωσσών (π.χ. «Français» αντί «français»)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Όταν είναι απενεργοποιημένο, τα ονόματα γλωσσών εμφανίζονται στη μητρική τους ορθογραφία (γλωσσολογικά ορθή). Όταν είναι ενεργοποιημένο, κάθε όνομα γλώσσας ξεκινά με κεφαλαίο για οπτική συνέπεια.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

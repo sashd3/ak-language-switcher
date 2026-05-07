@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Сохранение…',
 		'Saved': 'Сохранено',
 		'Help': 'Справка',
-		'Language Switcher Help': 'Справка – Переключатель языка',
 		'Overview': 'Обзор',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Это приложение добавляет переключатель языка в заголовок Nextcloud. Оно работает как для авторизованных пользователей, так и для анонимных посетителей на публичных страницах общего доступа.',
 		'How it works': 'Как это работает',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Разрешённые языки: Ограничьте, какие языки отображаются в переключателе. Оставьте пустым для отображения всех установленных языков.',
 		'Requirements': 'Требования',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 или новее. Расширение PHP intl рекомендуется для отображения нативных названий языков.',
+		'Language switcher help': 'Справка – Переключатель языка',
+		'Language switcher': 'Переключатель языка',
+		'Display': 'Отображение',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Названия языков с заглавной буквы (например, «Français» вместо «français»)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Когда выключено, названия языков отображаются в их родной орфографии (лингвистически правильной). Когда включено, каждое название языка начинается с заглавной буквы для визуальной согласованности.',
 	},
 	'nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);'
 );

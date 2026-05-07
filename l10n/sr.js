@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Чување…',
 		'Saved': 'Сачувано',
 		'Help': 'Помоћ',
-		'Language Switcher Help': 'Помоћ – Пребацивач језика',
 		'Overview': 'Преглед',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ова апликација додаје пребацивач језика у заглавље Nextcloud-а. Ради и за пријављене кориснике и за анонимне посетиоце на јавним страницама дељења.',
 		'How it works': 'Како функционише',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Дозвољени језици: Ограничите које се језике приказују у пребацивачу. Оставите празно за приказ свих инсталираних језика.',
 		'Requirements': 'Захтеви',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 или новији. PHP intl екстензија се препоручује за нативна имена језика.',
+		'Language switcher help': 'Помоћ – Пребацивач језика',
+		'Language switcher': 'Пребацивач језика',
+		'Display': 'Приказ',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Имена језика великим почетним словом (нпр. „Français" уместо „français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Када је онемогућено, имена језика се приказују у њиховом изворном правопису (лингвистички исправно). Када је омогућено, свако име језика почиње великим словом ради визуелне доследности.',
 	},
 	'nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);'
 );

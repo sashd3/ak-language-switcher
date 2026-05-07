@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'ინახება…',
 		'Saved': 'შენახულია',
 		'Help': 'დახმარება',
-		'Language Switcher Help': 'დახმარება – ენის გადამრთველი',
 		'Overview': 'მიმოხილვა',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'ეს აპლიკაცია Nextcloud-ის სათაურის ზოლს ენის გადამრთველს ამატებს. იგი მუშაობს როგორც შესულ მომხმარებლებზე, ასევე ანონიმურ ვიზიტორებზე საჯარო გაზიარების გვერდებზე.',
 		'How it works': 'როგორ მუშაობს',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'დაშვებული ენები: შეზღუდეთ, რომელი ენები გამოჩნდეს გადამრთველში. დატოვეთ ცარიელი ყველა დაინსტალირებული ენის საჩვენებლად.',
 		'Requirements': 'მოთხოვნები',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 ან უახლესი. PHP intl გაფართოება რეკომენდებულია ენების ნათიური სახელებისთვის.',
+		'Language switcher help': 'დახმარება – ენის გადამრთველი',
+		'Language switcher': 'ენების ჩამრთველი',
+		'Display': 'ჩვენება',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'ენების სახელები დიდი ასოთი დაწყება („Français" „français"-ის ნაცვლად)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'გათიშვისას ენების სახელები გამოისახება მათი ბუნებრივი მართლწერით (ლინგვისტურად სწორი). ჩართვისას თითოეული ენის სახელი იწყება დიდი ასოთი ვიზუალური თანმიმდევრულობისთვის.',
 	},
 	'nplurals=1; plural=0;'
 );

@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': '저장 중…',
 		'Saved': '저장됨',
 		'Help': '도움말',
-		'Language Switcher Help': '언어 전환기 도움말',
 		'Overview': '개요',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': '이 앱은 Nextcloud 헤더 바에 언어 전환기를 추가합니다. 로그인한 사용자와 공개 공유 페이지의 익명 방문자 모두에게 작동합니다.',
 		'How it works': '작동 방식',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': '허용 언어: 전환기에 표시되는 언어를 제한합니다. 비워두면 설치된 모든 언어가 표시됩니다.',
 		'Requirements': '요구 사항',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 이상. 기본 언어 이름을 위해 PHP intl 확장이 권장됩니다.',
+		'Language switcher help': '언어 전환기 도움말',
+		'Language switcher': '언어 전환기',
+		'Display': '표시',
+		'Capitalize language names (e.g. "Français" instead of "français")': '언어 이름을 대문자로 시작 (예: "français" 대신 "Français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': '사용 안 함으로 설정하면 언어 이름이 원래 철자(언어학적으로 올바른 표기)로 표시됩니다. 사용으로 설정하면 시각적 일관성을 위해 모든 언어 이름이 대문자로 시작됩니다.',
 	},
 	'nplurals=1; plural=0;'
 );

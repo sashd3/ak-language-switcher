@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Salvataggio…',
 		'Saved': 'Salvato',
 		'Help': 'Aiuto',
-		'Language Switcher Help': 'Guida al selettore di lingua',
 		'Overview': 'Panoramica',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Questa app aggiunge un selettore di lingua alla barra dell’intestazione di Nextcloud. Funziona sia per gli utenti autenticati che per i visitatori anonimi nelle pagine di condivisione pubblica.',
 		'How it works': 'Come funziona',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Lingue consentite: limita quali lingue appaiono nel selettore. Lascia vuoto per mostrare tutte le lingue installate.',
 		'Requirements': 'Requisiti',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 o versione successiva. L’estensione PHP intl è consigliata per i nomi nativi delle lingue.',
+		'Language switcher help': 'Guida al selettore di lingua',
+		'Language switcher': 'Selettore lingua',
+		'Display': 'Visualizzazione',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Iniziali maiuscole nei nomi delle lingue (es. «Français» invece di «français»)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Quando disattivato, i nomi delle lingue sono mostrati nella loro ortografia nativa (linguisticamente corretta). Quando attivato, ogni nome di lingua inizia con una lettera maiuscola per una visualizzazione coerente.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Ag sábháil…',
 		'Saved': 'Sábháilte',
 		'Help': 'Cabhair',
-		'Language Switcher Help': 'Cabhair Athraitheoirteanga',
 		'Overview': 'Forbhreathnú',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Cuireann an aip seo athraitheoirteanga le barra ceanntásca Nextcloud. Oibríonn sé do úsáideoirí atá logáilte isteach agus cuairteoirí anaithnide ar leathanaigh roinnte poiblí.',
 		'How it works': 'Conas a oibríonn sé',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Teangacha ceadaithe: Cuir teorainn leis na teangacha a thaispeántar san athraitheoirteanga. Fág folamh chun gach teanga suiteáilte a thaispeáint.',
 		'Requirements': 'Riachtanais',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 nó níos nuaí. Moltar an síneadh PHP intl le haghaidh ainmneacha teanga dúchasacha.',
+		'Language switcher help': 'Cabhair Athraitheoirteanga',
+		'Language switcher': 'Athraitheoir teangacha',
+		'Display': 'Taispeáin',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Ceannlitir ar ainmneacha teangacha (m.sh. "Français" in ionad "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Nuair atá sé díchumasaithe, taispeántar ainmneacha teangacha ina litriú dúchasach (atá teangeolaíochta ceart). Nuair atá sé cumasaithe, tosaíonn gach ainm teanga le ceannlitir ar mhaithe le comhsheasmhacht amhairc.',
 	},
 	'nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);'
 );

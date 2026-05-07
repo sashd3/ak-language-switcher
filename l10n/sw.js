@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Inahifadhi…',
 		'Saved': 'Imehifadhiwa',
 		'Help': 'Msaada',
-		'Language Switcher Help': 'Msaada wa Kibadilishaji cha Lugha',
 		'Overview': 'Muhtasari',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Programu hii inaongeza kibadilishaji cha lugha kwenye upau wa kichwa wa Nextcloud. Inafanya kazi kwa watumiaji walioingia na wageni wasio na jina kwenye kurasa za kushiriki za umma.',
 		'How it works': 'Jinsi inavyofanya kazi',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Lugha zinazoruhusiwa: Zuia lugha zinazoonyeshwa katika kibadilishaji. Acha wazi kuonyesha lugha zote zilizosanikishwa.',
 		'Requirements': 'Mahitaji',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 au mpya zaidi. Kiendelezi cha PHP intl kinapendekezwa kwa majina ya lugha asilia.',
+		'Language switcher help': 'Msaada wa Kibadilishaji cha Lugha',
+		'Language switcher': 'Kibadilisha lugha',
+		'Display': 'Onyesho',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Anza majina ya lugha kwa herufi kubwa (mfano "Français" badala ya "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Inapozimwa, majina ya lugha yanaonyeshwa katika tahajia yao ya asili (sahihi kiisimu). Inapowashwa, kila jina la lugha huanza kwa herufi kubwa ili kuwe na uthabiti wa kuona.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Se salvează…',
 		'Saved': 'Salvat',
 		'Help': 'Ajutor',
-		'Language Switcher Help': 'Ajutor pentru selectorul de limbă',
 		'Overview': 'Prezentare generală',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Această aplicație adaugă un selector de limbă în bara de antet Nextcloud. Funcționează atât pentru utilizatorii autentificați, cât și pentru vizitatorii anonimi pe paginile de partajare publică.',
 		'How it works': 'Cum funcționează',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Limbi permise: restricționați ce limbi apar în selector. Lăsați gol pentru a afișa toate limbile instalate.',
 		'Requirements': 'Cerințe',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 sau mai nou. Extensia PHP intl este recomandată pentru denumirile native ale limbilor.',
+		'Language switcher help': 'Ajutor pentru selectorul de limbă',
+		'Language switcher': 'Selector de limbă',
+		'Display': 'Afișare',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Începe numele limbilor cu majusculă (ex. „Français" în loc de „français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Când este dezactivat, numele limbilor sunt afișate în ortografia lor nativă (corectă lingvistic). Când este activat, fiecare nume de limbă începe cu literă mare pentru o aparență vizuală uniformă.',
 	},
 	'nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);'
 );

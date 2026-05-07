@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Menyimpan…',
 		'Saved': 'Disimpan',
 		'Help': 'Bantuan',
-		'Language Switcher Help': 'Bantuan Penukar Bahasa',
 		'Overview': 'Gambaran keseluruhan',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Aplikasi ini menambahkan penukar bahasa ke bar pengepala Nextcloud. Ia berfungsi untuk pengguna yang log masuk dan pelawat tanpa nama di halaman perkongsian awam.',
 		'How it works': 'Cara ia berfungsi',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Bahasa yang dibenarkan: Hadkan bahasa yang muncul dalam penukar. Biarkan kosong untuk menunjukkan semua bahasa yang dipasang.',
 		'Requirements': 'Keperluan',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 atau lebih baru. Sambungan PHP intl disyorkan untuk nama bahasa asli.',
+		'Language switcher help': 'Bantuan Penukar Bahasa',
+		'Language switcher': 'Penukar bahasa',
+		'Display': 'Paparan',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Mulakan nama bahasa dengan huruf besar (cth. "Français" dan bukan "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Apabila dimatikan, nama bahasa dipaparkan dalam ejaan asal mereka (betul secara linguistik). Apabila diaktifkan, setiap nama bahasa dimulakan dengan huruf besar untuk keseragaman visual.',
 	},
 	'nplurals=1; plural=0;'
 );

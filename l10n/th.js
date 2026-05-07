@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'กำลังบันทึก…',
 		'Saved': 'บันทึกแล้ว',
 		'Help': 'ช่วยเหลือ',
-		'Language Switcher Help': 'ความช่วยเหลือตัวเปลี่ยนภาษา',
 		'Overview': 'ภาพรวม',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'แอปนี้เพิ่มตัวเปลี่ยนภาษาในแถบส่วนหัวของ Nextcloud ใช้งานได้ทั้งกับผู้ใช้ที่เข้าสู่ระบบและผู้เยี่ยมชมที่ไม่ระบุตัวตนในหน้าแชร์สาธารณะ',
 		'How it works': 'วิธีการทำงาน',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'ภาษาที่อนุญาต: จำกัดภาษาที่แสดงในตัวเปลี่ยนภาษา ปล่อยว่างเพื่อแสดงภาษาที่ติดตั้งทั้งหมด',
 		'Requirements': 'ความต้องการของระบบ',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 หรือใหม่กว่า แนะนำให้ใช้ส่วนขยาย PHP intl สำหรับชื่อภาษาในรูปแบบพื้นเมือง',
+		'Language switcher help': 'ความช่วยเหลือตัวเปลี่ยนภาษา',
+		'Language switcher': 'ตัวสลับภาษา',
+		'Display': 'การแสดงผล',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'ขึ้นต้นชื่อภาษาด้วยตัวพิมพ์ใหญ่ (เช่น "Français" แทน "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'เมื่อปิดใช้งาน ชื่อภาษาจะแสดงตามการสะกดดั้งเดิม (ถูกต้องตามหลักภาษาศาสตร์) เมื่อเปิดใช้งาน ชื่อภาษาทั้งหมดจะขึ้นต้นด้วยตัวพิมพ์ใหญ่เพื่อความสม่ำเสมอทางสายตา',
 	},
 	'nplurals=1; plural=0;'
 );

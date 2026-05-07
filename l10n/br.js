@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'O enrollañ…',
 		'Saved': 'Enrollet',
 		'Help': 'Skoazell',
-		'Language Switcher Help': 'Skoazell ar c\'hemmer yezh',
 		'Overview': 'Dreist-sell',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ar meziant-mañ a ouzh ur c\'hemmer yezh da varrenn-penn Nextcloud. Emañ o labourat evit ar vevañsoù kevreet hag an dizanv war pajennoù rann foran.',
 		'How it works': 'Penaos emañ o labourat',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Yezhoù aotret: Bevennoù lakaet war pe yezhoù o tiskouez er c\'hemmer. Laoskit goullo evit diskouez an holl yezhoù staliet.',
 		'Requirements': 'Rekizitoù',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 pe nevesoc\'h. Enaouet e vez danvez-ouzhpenn PHP intl evit anvioù yezh bonel.',
+		'Language switcher help': 'Skoazell ar c\'hemmer yezh',
+		'Language switcher': 'Cheñcher yezhoù',
+		'Display': 'Diskwel',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Pennlizherenniñ anvioù ar yezhoù (da sk. "Français" e-lec\'h "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Pa vez diweredekaet, an anvioù yezhoù a vez diskwelet en o reizhskrivadur orin (reizh diouzh ar yezhoniezh). Pa vez gweredekaet, kement anv yezh a grog gant ul lizherenn vras evit ur welusted unvan.',
 	},
 	'nplurals=2; plural=(n > 1);'
 );

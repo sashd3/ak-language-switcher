@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'در حال ذخیره…',
 		'Saved': 'ذخیره شد',
 		'Help': 'راهنما',
-		'Language Switcher Help': 'راهنمای تغییردهنده زبان',
 		'Overview': 'مرور کلی',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'این برنامه یک تغییردهنده زبان به نوار سرصفحه Nextcloud اضافه می‌کند. برای کاربران وارد شده و بازدیدکنندگان ناشناس در صفحات اشتراک‌گذاری عمومی کار می‌کند.',
 		'How it works': 'نحوه کارکرد',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'زبان‌های مجاز: زبان‌هایی که در تغییردهنده نمایش داده می‌شوند را محدود کنید. برای نمایش همه زبان‌های نصب‌شده، خالی بگذارید.',
 		'Requirements': 'پیش‌نیازها',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 یا جدیدتر. افزونه PHP intl برای نام‌های زبان بومی توصیه می‌شود.',
+		'Language switcher help': 'راهنمای تغییردهنده زبان',
+		'Language switcher': 'تغییردهنده زبان',
+		'Display': 'نمایش',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'نام زبان‌ها را با حرف بزرگ شروع کن (مثلاً "Français" به‌جای "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'هنگامی که غیرفعال است، نام زبان‌ها در املای بومی خود نمایش داده می‌شوند (از نظر زبانی صحیح). هنگامی که فعال است، نام هر زبان برای یکنواختی بصری با حرف بزرگ آغاز می‌شود.',
 	},
 	'nplurals=2; plural=(n > 1);'
 );

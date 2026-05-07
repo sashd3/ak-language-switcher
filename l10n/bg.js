@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Запазване…',
 		'Saved': 'Запазено',
 		'Help': 'Помощ',
-		'Language Switcher Help': 'Помощ – Превключвател на езика',
 		'Overview': 'Преглед',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Това приложение добавя превключвател на езика към заглавната лента на Nextcloud. Работи както за влезлите потребители, така и за анонимните посетители на публичните страници за споделяне.',
 		'How it works': 'Как работи',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Разрешени езици: Ограничете кои езици се показват в превключвателя. Оставете празно за показване на всички инсталирани езици.',
 		'Requirements': 'Изисквания',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 или по-нов. Разширението PHP intl се препоръчва за местни имена на езиците.',
+		'Language switcher help': 'Помощ – Превключвател на езика',
+		'Language switcher': 'Превключвател на езика',
+		'Display': 'Изобразяване',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Започвай имената на езиците с главна буква (напр. "Français" вместо "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Когато е изключено, имената на езиците се показват в техния роден правопис (лингвистично коректно). Когато е включено, всяко име започва с главна буква за визуална последователност.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

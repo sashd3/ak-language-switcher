@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Ukládání…',
 		'Saved': 'Uloženo',
 		'Help': 'Nápověda',
-		'Language Switcher Help': 'Nápověda – Přepínač jazyka',
 		'Overview': 'Přehled',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Tato aplikace přidává přepínač jazyka do záhlaví Nextcloud. Funguje jak pro přihlášené uživatele, tak pro anonymní návštěvníky na veřejných stránkách sdílení.',
 		'How it works': 'Jak to funguje',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Povolené jazyky: Omezte, které jazyky se zobrazí v přepínači. Ponechte prázdné pro zobrazení všech nainstalovaných jazyků.',
 		'Requirements': 'Požadavky',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 nebo novější. Rozšíření PHP intl je doporučeno pro nativní názvy jazyků.',
+		'Language switcher help': 'Nápověda – Přepínač jazyka',
+		'Language switcher': 'Přepínač jazyka',
+		'Display': 'Zobrazení',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Názvy jazyků začínají velkým písmenem (např. „Français“ místo „français“)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Když je vypnuto, názvy jazyků se zobrazují v jejich původním pravopisu (lingvisticky správném). Když je zapnuto, každý název jazyka začíná velkým písmenem pro jednotný vizuální vzhled.',
 	},
 	'nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;'
 );

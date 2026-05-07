@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Mentés…',
 		'Saved': 'Mentve',
 		'Help': 'Súgó',
-		'Language Switcher Help': 'Súgó – Nyelvváltó',
 		'Overview': 'Áttekintés',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ez az alkalmazás nyelvváltót ad a Nextcloud fejlécéhez. Működik a bejelentkezett felhasználók és a nyilvános megosztási oldalakon tartózkodó névtelen látogatók számára egyaránt.',
 		'How it works': 'Hogyan működik',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Engedélyezett nyelvek: Korlátozza, mely nyelvek jelenjenek meg a váltóban. Hagyja üresen az összes telepített nyelv megjelenítéséhez.',
 		'Requirements': 'Követelmények',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 vagy újabb. A PHP intl kiterjesztés ajánlott a natív nyelvnevekhez.',
+		'Language switcher help': 'Súgó – Nyelvváltó',
+		'Language switcher': 'Nyelvváltó',
+		'Display': 'Megjelenítés',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Nyelvnevek nagy kezdőbetűvel (pl. „Français" a „français" helyett)',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Kikapcsolva a nyelvek nevei az eredeti helyesírásukkal jelennek meg (nyelvileg helyes). Bekapcsolva minden nyelvnév nagy kezdőbetűvel kezdődik az egységes megjelenés érdekében.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

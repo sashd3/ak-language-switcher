@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Späicheren…',
 		'Saved': 'Gespäichert',
 		'Help': 'Hëllef',
-		'Language Switcher Help': 'Hëllef fir Sproochumschalter',
 		'Overview': 'Iwwersiicht',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Dës App füügt e Sproochumschalter an d’Nextcloud-Kopflinn derbäi. Et funktionéiert souwuel fir ageloggte Benotzer wéi och fir anonym Besucher op ëffentleche Deelseiten.',
 		'How it works': 'Wéi et funktionéiert',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Erlaabt Sproochen: aschränken wéi eng Sproochen am Umschalter erschéngen. Eidel loossen fir all installéiert Sproochen ze weisen.',
 		'Requirements': 'Ufuerderungen',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 oder méi nei. D’PHP intl-Extensioun gëtt fir native Sproochnimm empfohlen.',
+		'Language switcher help': 'Hëllef fir Sproochumschalter',
+		'Language switcher': 'Sproochwiessel',
+		'Display': 'Affichage',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Sproochnimm mat Grousschriewen ufänken (z.B. "Français" amplaz "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Wann deaktivéiert, ginn d\'Sproochnimm an hirer ursprénglecher Schreifweis ugewisen (sproochlech korrekt). Wann aktivéiert, fänkt all Sproochnumm mat engem Grousschreiwen un fir e konsequent visuellt Erscheinungsbild.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'A\' sàbhaladh…',
 		'Saved': 'Air a shàbhaladh',
 		'Help': 'Cuideachadh',
-		'Language Switcher Help': 'Cuideachadh Atharraiche Cànan',
 		'Overview': 'Farsaingeachd',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Tha an aplacaid seo a\' cur atharraiche cànan ri bàr cinn Nextcloud. Bidh e ag obair airson luchd-cleachdaidh clàraichte agus luchd-tadhail gun ainm air duilleagan roinnte poblach.',
 		'How it works': 'Mar a tha e ag obair',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Cànanan ceadaichte: Cùm sùil air na cànanan a nochdas anns an atharraiche. Fàg falamh gus a h-uile cànan stàlaichte a shealltainn.',
 		'Requirements': 'Riatanasan',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 no nas ùire. Mholar an leudachadh PHP intl airson ainmean cànan dùthchasach.',
+		'Language switcher help': 'Cuideachadh Atharraiche Cànan',
+		'Language switcher': 'Suidsear cànain',
+		'Display': 'Taisbeanadh',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Litir mhòr air ainmean nan cànan (m.e. "Français" seach "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Nuair a tha e à comas, thèid ainmean nan cànan a shealltainn anns an litreachadh dhùthchasach aca (ceart a thaobh cànanachais). Nuair a tha e an comas, tòisichidh gach ainm cànain le litir mhòr airson coltas lèirsinneach cothromach.',
 	},
 	'nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : (n > 2 && n < 20) ? 2 : 3;'
 );

@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Duke ruajtur…',
 		'Saved': 'U ruajt',
 		'Help': 'Ndihmë',
-		'Language Switcher Help': 'Ndihmë – Ndërrues gjuhe',
 		'Overview': 'Pasqyrë',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ky aplikacion shton një ndërrues gjuhe në shiritin e kokës së Nextcloud. Funksionon si për përdoruesit e identifikuar ashtu edhe për vizitorët anonimë në faqet publike të ndarjes.',
 		'How it works': 'Si funksionon',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Gjuhët e lejuara: Kufizoni cilat gjuhë shfaqen në ndërrues. Lini bosh për të shfaqur të gjitha gjuhët e instaluara.',
 		'Requirements': 'Kërkesat',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 ose më i ri. Zgjerimi PHP intl rekomandohet për emrat vendas të gjuhëve.',
+		'Language switcher help': 'Ndihmë – Ndërrues gjuhe',
+		'Language switcher': 'Ndërrues gjuhësh',
+		'Display': 'Shfaqja',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Fillo emrat e gjuhëve me shkronjë të madhe (p.sh. "Français" në vend të "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Kur është i çaktivizuar, emrat e gjuhëve shfaqen në drejtshkrimin e tyre origjinal (gjuhësisht i saktë). Kur është i aktivizuar, çdo emër gjuhe fillon me shkronjë të madhe për qëndrueshmëri vizuale.',
 	},
 	'nplurals=2; plural=(n != 1);'
 );

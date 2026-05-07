@@ -4,14 +4,26 @@ build_dir=build
 tarball=$(build_dir)/$(app_name)-$(version).tar.gz
 sign_dir=$(build_dir)/sign
 
-.PHONY: all appstore clean
+.PHONY: all appstore clean clean-mac verify
 
 all: appstore
 
 clean:
 	rm -rf $(build_dir)
 
-appstore: clean
+clean-mac:
+	dot_clean -m .
+	find . -name '._*' -delete
+	find . -name '.DS_Store' -delete
+
+verify:
+	@if find $(sign_dir) -name '._*' | grep -q .; then \
+		echo "ERROR: Apple Double files found!"; \
+		find $(sign_dir) -name '._*'; \
+		exit 1; \
+	fi
+
+appstore: clean clean-mac
 	mkdir -p $(sign_dir)/$(app_name)
 	# App metadata
 	cp -r appinfo $(sign_dir)/$(app_name)/
@@ -33,9 +45,11 @@ appstore: clean
 	# Composer autoload
 	cp composer.json $(sign_dir)/$(app_name)/
 	cp composer.lock $(sign_dir)/$(app_name)/
-	# Remove macOS resource fork files that cause ReflectionException on Linux servers
+	# Clean and verify no macOS artifacts remain
 	find $(sign_dir) -name '._*' -delete
-	# Create tarball (COPYFILE_DISABLE prevents macOS from adding ._* files)
+	find $(sign_dir) -name '.DS_Store' -delete
+	$(MAKE) verify
+	# Create tarball
 	COPYFILE_DISABLE=1 tar czf $(tarball) -C $(sign_dir) $(app_name)
 	# Cleanup staging
 	rm -rf $(sign_dir)

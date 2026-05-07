@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Yn cadw…',
 		'Saved': 'Wedi cadw',
 		'Help': 'Cymorth',
-		'Language Switcher Help': 'Cymorth Newidiwr Iaith',
 		'Overview': 'Trosolwg',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Mae\'r ap hwn yn ychwanegu newidiwr iaith i far pennawd Nextcloud. Mae\'n gweithio ar gyfer defnyddwyr sydd wedi mewngofnodi ac ymwelwyr anhysbys ar dudalennau rhannu cyhoeddus.',
 		'How it works': 'Sut mae\'n gweithio',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Ieithoedd a ganiateir: Cyfyngwch pa ieithoedd sy\'n ymddangos yn y newidiwr. Gadewch yn wag i ddangos pob iaith sydd wedi\'i gosod.',
 		'Requirements': 'Gofynion',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 neu newach. Argymhellir yr estyniad PHP intl ar gyfer enwau iaith brodorol.',
+		'Language switcher help': 'Cymorth Newidiwr Iaith',
+		'Language switcher': 'Newidydd iaith',
+		'Display': 'Arddangos',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Llythrennu enwau ieithoedd â phriflythyren (e.e. "Français" yn lle "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Pan fydd wedi\'i analluogi, dangosir enwau ieithoedd yn eu horgraff frodorol (yn ieithyddol gywir). Pan fydd wedi\'i alluogi, mae pob enw iaith yn dechrau â phriflythyren ar gyfer cysondeb gweledol.',
 	},
 	'nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;'
 );

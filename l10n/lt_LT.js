@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Išsaugoma…',
 		'Saved': 'Išsaugota',
 		'Help': 'Pagalba',
-		'Language Switcher Help': 'Pagalba – Kalbos keitiklis',
 		'Overview': 'Apžvalga',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ši programa prideda kalbos keitiklį į Nextcloud antraštės juostą. Ji veikia tiek prisijungusiems naudotojams, tiek anonimiams lankytojams viešuosiuose bendrinimo puslapiuose.',
 		'How it works': 'Kaip tai veikia',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Leidžiamos kalbos: Apribokite, kurios kalbos rodomos keitiklyje. Palikite tuščią, kad būtų rodomos visos įdiegtos kalbos.',
 		'Requirements': 'Reikalavimai',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 ar naujesnė versija. PHP intl plėtinys rekomenduojamas gimtikų kalbų pavadinimams.',
+		'Language switcher help': 'Pagalba – Kalbos keitiklis',
+		'Language switcher': 'Kalbos perjungiklis',
+		'Display': 'Rodymas',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Kalbų pavadinimai didžiosiomis raidėmis (pvz. „Français" vietoj „français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Kai išjungta, kalbų pavadinimai rodomi jų gimtąja rašyba (lingvistiškai teisinga). Kai įjungta, kiekvienas kalbos pavadinimas prasideda didžiąja raide vienodam vaizdui.',
 	},
 	'nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);'
 );

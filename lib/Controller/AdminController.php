@@ -38,9 +38,11 @@ class AdminController extends Controller {
 		string $icon = 'Globe',
 		int $iconSize = 20,
 		string $iconColor = '',
-		float $iconStrokeWidth = 2
+		float $iconStrokeWidth = 2,
+		bool $capitalizeNames = true
 	): JSONResponse {
 		$this->config->setAppValue(Application::APP_ID, 'enabled', $enabled ? 'yes' : 'no');
+		$this->config->setAppValue(Application::APP_ID, 'capitalize_names', $capitalizeNames ? 'yes' : 'no');
 
 		// Validate language codes
 		$validCodes = array_column($this->languageService->getAvailableLanguages(), 'code');

@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'သိမ်းဆည်းနေသည်…',
 		'Saved': 'သိမ်းဆည်းပြီးပါပြီ',
 		'Help': 'အကူအညီ',
-		'Language Switcher Help': 'ဘာသာစကား ပြောင်းလဲကိရိယာ အကူအညီ',
 		'Overview': 'အနှစ်ချုပ်',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'ဤ App သည် Nextcloud ခေါင်းစဉ်ဘားတွင် ဘာသာစကား ပြောင်းလဲကိရိယာ ထည့်သွင်းသည်။ ၎င်းသည် ဝင်ရောက်ထားသော သုံးစွဲသူများနှင့် အများပြည်သူ မျှဝေသည့် စာမျက်နှာများရှိ익名 ဧည့်သည်များ နှစ်ဦးနှစ်ဖက်အတွက် အလုပ်လုပ်သည်။',
 		'How it works': 'ဤကိရိယာ အလုပ်လုပ်ပုံ',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'ခွင့်ပြုထားသော ဘာသာစကားများ: ပြောင်းလဲကိရိယာတွင် မည်သည့်ဘာသာစကားများ ပေါ်လာမည်ကို ကန့်သတ်ပါ။ ထည့်သွင်းထားသော ဘာသာစကားအားလုံး ပြသရန် ဗလာထားပါ။',
 		'Requirements': 'လိုအပ်ချက်များ',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud ၂၇ သို့မဟုတ် အသစ်ပိုင်း။ မူရင်းဘာသာစကား အမည်များအတွက် PHP intl extension ကို အကြံပြုသည်။',
+		'Language switcher help': 'ဘာသာစကား ပြောင်းလဲကိရိယာ အကူအညီ',
+		'Language switcher': 'ဘာသာစကားပြောင်းကိရိယာ',
+		'Display': 'ပြသမှု',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'ဘာသာစကားအမည်များကို စာလုံးကြီးဖြင့်စတင်ပါ (ဥပမာ "français" အစား "Français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'ပိတ်ထားသည့်အခါ ဘာသာစကားအမည်များကို ၎င်းတို့၏မူရင်းစာလုံးပေါင်း(ဘာသာဗေဒအရမှန်ကန်သော)ဖြင့် ဖော်ပြသည်။ ဖွင့်ထားသည့်အခါ မြင်ကွင်းတသမတ်တည်းဖြစ်စေရန် ဘာသာစကားအမည်တိုင်းသည် စာလုံးကြီးဖြင့် စတင်သည်။',
 	},
 	'nplurals=1; plural=0;'
 );

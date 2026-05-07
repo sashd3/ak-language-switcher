@@ -3,9 +3,17 @@ vendor/
 .npm
 js/*.map
 deploy.sh
+scripts/
 __pycache__/
 build/
 .playwright-mcp/
 docs/RELEASE_WORKFLOW.md
 docs/STORE_PUBLISHING.md
 *.code-workspace
+
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.Spotlight-V100
+.Trashes

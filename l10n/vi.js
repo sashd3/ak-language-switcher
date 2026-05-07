@@ -16,7 +16,6 @@ OC.L10N.register(
 		'Saving…': 'Đang lưu…',
 		'Saved': 'Đã lưu',
 		'Help': 'Trợ giúp',
-		'Language Switcher Help': 'Trợ giúp bộ chuyển đổi ngôn ngữ',
 		'Overview': 'Tổng quan',
 		'This app adds a language switcher to the Nextcloud header bar. It works for both logged-in users and anonymous visitors on public share pages.': 'Ứng dụng này thêm bộ chuyển đổi ngôn ngữ vào thanh tiêu đề Nextcloud. Hoạt động cho cả người dùng đã đăng nhập và khách truy cập ẩn danh trên các trang chia sẻ công khai.',
 		'How it works': 'Cách hoạt động',
@@ -30,6 +29,11 @@ OC.L10N.register(
 		'Allowed languages: Restrict which languages appear in the switcher. Leave empty to show all installed languages.': 'Ngôn ngữ được phép: Giới hạn ngôn ngữ nào xuất hiện trong bộ chuyển đổi. Để trống để hiển thị tất cả ngôn ngữ đã cài đặt.',
 		'Requirements': 'Yêu cầu',
 		'Nextcloud 27 or newer. The PHP intl extension is recommended for native language names.': 'Nextcloud 27 trở lên. Tiện ích mở rộng PHP intl được khuyến nghị cho tên ngôn ngữ bản địa.',
+		'Language switcher help': 'Trợ giúp bộ chuyển đổi ngôn ngữ',
+		'Language switcher': 'Bộ chuyển ngôn ngữ',
+		'Display': 'Hiển thị',
+		'Capitalize language names (e.g. "Français" instead of "français")': 'Viết hoa tên ngôn ngữ (ví dụ "Français" thay vì "français")',
+		'When disabled, language names are shown in their native orthography (linguistically correct). When enabled, every language name starts with an uppercase letter for visual consistency.': 'Khi tắt, tên ngôn ngữ được hiển thị theo cách viết gốc (đúng về mặt ngôn ngữ học). Khi bật, mỗi tên ngôn ngữ bắt đầu bằng chữ in hoa để có giao diện đồng nhất.',
 	},
 	'nplurals=1; plural=0;'
 );
