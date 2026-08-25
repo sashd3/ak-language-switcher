@@ -28,6 +28,12 @@ class Application extends App implements IBootstrap {
 		parent::__construct(self::APP_ID);
 	}
 
+	/** Accept-Language header as it arrived, before register() overrode it. */
+	private static ?string $originalAcceptLanguage = null;
+
+	/** Whether register() actually replaced the Accept-Language header. */
+	private static bool $acceptLanguageOverridden = false;
+
 	/**
 	 * Read and sanitize nc_language cookie value.
 	 */
@@ -43,11 +49,51 @@ class Application extends App implements IBootstrap {
 		return $lang !== '' ? $lang : null;
 	}
 
+	/**
+	 * Expire the nc_language cookie and stop it affecting the current request.
+	 */
+	private static function clearCookie(): void {
+		unset($_COOKIE['nc_language']);
+		if (!headers_sent()) {
+			setcookie('nc_language', '', ['expires' => 1, 'path' => '/', 'samesite' => 'Lax']);
+		}
+	}
+
+	/**
+	 * Undo the Accept-Language override applied by register().
+	 */
+	private static function restoreAcceptLanguage(): void {
+		if (!self::$acceptLanguageOverridden) {
+			return;
+		}
+		if (self::$originalAcceptLanguage === null) {
+			unset($_SERVER['HTTP_ACCEPT_LANGUAGE']);
+		} else {
+			$_SERVER['HTTP_ACCEPT_LANGUAGE'] = self::$originalAcceptLanguage;
+		}
+		self::$acceptLanguageOverridden = false;
+	}
+
+	/**
+	 * Whether a user is signed in. Fails closed to "anonymous" so that a
+	 * container/session hiccup keeps the previous (public-page) behaviour.
+	 */
+	private static function isLoggedIn(IBootContext $context): bool {
+		try {
+			return $context->getServerContainer()->get(IUserSession::class)->isLoggedIn();
+		} catch (\Throwable $e) {
+			return false;
+		}
+	}
+
 	public function register(IRegistrationContext $context): void {
-		// Cookie → Accept-Language override for anonymous users
-		// This runs early but the L10N Factory might already have cached its result
+		// Cookie → Accept-Language override for anonymous users.
+		// This runs too early to know whether anyone is signed in, so boot()
+		// re-checks and reverts this for logged-in users.
 		$lang = self::getCookieLanguage();
 		if ($lang !== null) {
+			self::$originalAcceptLanguage = $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? null;
+			self::$acceptLanguageOverridden = true;
 			$_SERVER['HTTP_ACCEPT_LANGUAGE'] = $lang;
 		}
 	}
@@ -56,7 +102,18 @@ class Application extends App implements IBootstrap {
 		// If cookie is set, force-reset the L10N Factory cache via reflection.
 		// This handles the case where another app triggered findLanguage()
 		// before our register() ran, caching the browser language.
+		//
+		// The cookie is only meant for anonymous visitors on public pages.
+		// Logged-in users have a real language preference (core/lang), which
+		// the L10N Factory resolves *after* requestLanguage — so a leftover
+		// cookie from an earlier public-share visit would silently override
+		// their saved language. Skip the override and drop the stale cookie.
 		$lang = self::getCookieLanguage();
+		if ($lang !== null && self::isLoggedIn($context)) {
+			self::clearCookie();
+			self::restoreAcceptLanguage();
+			$lang = null;
+		}
 		if ($lang !== null) {
 			try {
 				$factory = $context->getServerContainer()->get(IFactory::class);
@@ -81,7 +138,7 @@ class Application extends App implements IBootstrap {
 			$enabled = $config->getAppValue(self::APP_ID, 'enabled', 'yes') === 'yes';
 			if (!$enabled) {
 				if (isset($_COOKIE['nc_language'])) {
-					setcookie('nc_language', '', ['expires' => 1, 'path' => '/', 'samesite' => 'Lax']);
+					self::clearCookie();
 				}
 				return;
 			}

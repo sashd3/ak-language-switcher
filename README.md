@@ -15,7 +15,7 @@ A Nextcloud app that adds a language switcher to the header bar, allowing users 
 - Admin settings — choose from 6 icon styles, adjust size, stroke width and color
 - Language filter — admins can restrict which languages are available
 - Supports 100+ languages out of the box
-- Compatible with Nextcloud 27–33
+- Compatible with Nextcloud 27–35
 - Full dark mode support
 
 ## Installation

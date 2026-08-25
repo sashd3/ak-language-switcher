@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2026-08-25
+
+### Fixed
+- A leftover `nc_language` cookie no longer overrides a logged-in user's saved language. The cookie is only meant for anonymous visitors on public share pages, but it was applied unconditionally — so anyone who picked a language on a public share link and then signed in within the next 24 hours got a mixed-language interface, with their own language setting silently ignored. The cookie is now skipped and cleared as soon as a user is signed in.
+
+### Changed
+- Declare compatibility with Nextcloud 34 and 35 (`max-version` 33 → 35). Verified on Nextcloud 34.0.3 and 35.0.0 beta 4: header switcher, dropdown, language save for logged-in users, cookie-based switching on public share pages, and the admin settings panel all work unchanged. Note that 35 was only reachable as a pre-release at the time of this release — re-check once Nextcloud 35 is final.
+
 ## [1.0.2] - 2026-05-07
 
 ### Added
